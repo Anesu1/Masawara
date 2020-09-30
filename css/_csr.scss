@@ -1,0 +1,95 @@
+.csr{
+    padding-top:250px;
+    @media(max-width:1000px){
+        padding-top:40px;
+    }
+    @media(max-width:767px){
+        padding-top:39px;text-align:center;
+    }
+    h2{
+        font-weight:bold;font-size:48px;text-transform:uppercase;margin-left:238px;font-family:akrobat-extrabold;
+        &:before{
+            width:50%;content:"";background:$grey;position: absolute;right:0;height:50px;z-index:-1;
+        }
+       @media(max-width:1000px){
+           margin-left:auto;
+       }
+       @media(max-width:767px){
+           font-size:35px;
+       }
+    }
+    .text{
+        margin-top:87px;
+        @media(max-width:1000px){
+            margin-top:40px;
+        }
+        h3{
+            font-weight:bold;text-transform: uppercase;font-size:36px;font-family:akrobat-bold;
+            @media(max-width:767px){
+                font-size:25px;
+            }
+        }
+        p{
+            font-size:30px;font-family:akrobat-regular;
+            @media(max-width:767px){
+                font-size:20px;
+            }
+        }
+    }
+    .carousel-control-prev{
+        right:-110px;
+    }
+    .container{
+        width:80%;
+    }
+    .arrows{
+        @media(max-width:767px){
+            height:20px;
+        }
+        
+    }
+    .carousel-inner{
+        .carousel-item{
+            margin:79px 0 177px 0;position:relative;
+            @media(max-width:767px){
+                margin:39px 0;
+            }
+            img{
+                width:718px;
+                @media(max-width:767px){
+                    width:100%;
+                }
+            }
+           
+            .carousel-caption{
+                position: absolute;z-index:1;background:rgba(255, 255, 255, 0.657);left: 0;width: 432px;top: 60px;color:black;padding:35px 0 0 44px;text-align:left;height:361px;
+                @media(max-width:767px){
+                    height:100%;width:100%;top:0;bottom:0;
+                }
+                h3{
+                    font-size:48px;font-family:akrobat-extrabold;text-transform: uppercase;
+                    @media(max-width:1000px){
+                        font-size:35px;
+                    }
+                }
+                p{
+                    font-size:24px;font-family:akrobat-regular; padding:20px 0;
+                }
+                a{
+                    text-decoration:none;color:black;font-family:akrobat-regular;
+                    button{
+                        padding:10px 23px;font-size:24px; background:white;border:1px solid black;text-transform:uppercase;width:210px;
+                        img{
+                            width:44px;
+                        }
+                    }
+                }
+               
+
+            }
+            
+        }
+       
+    }
+  
+}

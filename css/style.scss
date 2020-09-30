@@ -1,0 +1,30 @@
+@mixin flex {
+    display:flex; align-items: center; justify-content: center;
+}
+
+@mixin background {
+    background-size: cover;background-position: center center;
+}
+
+@import "./fonts";
+@import "./variables";
+@import "./reset";
+@import "./header";
+@import "./banner";
+@import "./values";
+@import "./areas";
+@import "./portfolio";
+@import "./news";
+@import "./subscribe";
+@import "./team";
+@import "./csr";
+@import "./footer"; 
+
+//other Pages
+@import "./newsPage";
+@import "./portPage";
+@import "./teamPage";
+@import "./csrPage";
+@import "./about";
+@import "./about1";
+

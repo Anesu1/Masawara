@@ -1,0 +1,43 @@
+.team{
+    padding:55px 0 14px 0;position: relative;
+    @media(max-width:767px){
+        text-align:center;
+    }
+    &:before{
+        content:"";position:absolute;background: $gold;height:5px;width:398px;top:0;left:0;
+        @media(max-width:1000px){
+            width:50%;
+        }
+    }
+    &:after{
+        content:"";position:absolute;background: $gold;height:5px;width:538px;bottom:0;right:0;
+        @media(max-width:1000px){
+            width:50%;
+        }
+       
+    }
+    h2{
+        font-weight:bolder;font-size:48px;text-transform:uppercase;font-family:akrobat-extrabold;
+        @media(max-width:767px){
+            font-size:35px;
+        }
+    }
+    p{
+        font-size:36px;margin-bottom:34px;font-family:akrobat-regular;
+        @media(max-width:767px){
+            font-size:20px;
+        }
+    }
+    button{
+       background:white;border:1px solid $gold;width:238px;height:54px;font-family:akrobat-regular;font-size:24px;text-transform:uppercase;
+       @media(max-width:767px){
+        width:80%;margin-bottom:55px;
+    }
+        a{
+            padding:19px 0 12px 22px; text-transform: uppercase;text-decoration:none;font-size:24px;color:black;width:245px;
+            @media(max-width:767px){
+                font-size:15px;
+            }
+        }
+    }
+}

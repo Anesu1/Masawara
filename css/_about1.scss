@@ -1,0 +1,124 @@
+.about-banner{
+    height:100vh;display:flex;font-family:akrobat;
+    @media(min-width:767px) and (min-height:1000px){
+        height:48vh;
+    }
+    @media(max-width:767px){
+        flex-direction: column;
+    }
+    @media(max-width:823px) and (max-height:411px){
+        flex-direction: row;
+    }
+    .left{
+        width:63.4%;height:100%;background:url("../images/round-silver-colored-wall-clock-2853664.jpg");@include background();
+       @media(max-width:767px){
+           width:100%;height:50%;
+       }
+       @media(max-width:823px) and (max-height:411px){
+        width:63.4%;height:100%;
+    }
+    }
+    .right{
+        padding:178px 115px 0 105px;width:527px;
+        @media(max-width:1000px){
+            width:100% - 63.4%;padding:60px 30px 0 30px;
+        }
+        @media(max-width:767px){
+            width:100%;padding:5%;text-align:center;
+        }
+        @media(max-width:823px) and (max-height:411px){
+           width:100% - 63.4%;height:100%;text-align:left;
+        }
+        h1{
+            font-family:akrobat-extrabold;font-size:48px;
+            @media(max-width:767px){
+                font-size:43px;
+            }
+            @media(max-width:823px) and (max-height:411px){
+                font-size:40px;
+            }
+            @media(max-width:600px) and (max-height:411px){
+                font-size:35px;
+            }
+        }
+    }
+}
+.about-text{
+    margin-top:95px;margin-bottom:36px;padding:0 137px;position:relative;
+    @media(max-width:767px){
+        padding:10% 5%;text-align:center;margin-top:0;margin-bottom:0;
+    }
+    @media(max-width:823px) and (max-height:411px){
+        margin-top:40px;
+    }
+    h2{
+        font-size:48px;padding:27px 0 44px;text-transform: uppercase;font-family:akrobat-bold;
+        @media(max-width:767px){
+            font-size:35px;padding:0 0 29px;
+        }
+        &:before{
+            content:"";background:$gold;height:5px;position: absolute;top:0;left:0;width:276px;z-index:5;
+            @media(max-width:767px){
+                width:50%;
+            }
+        }
+        &:after{
+            content:"";background:$grey;position: absolute;top:0;left:0;height:50px;width:276px;z-index:-1;
+            @media(max-width:767px){
+                width:50%;
+            }
+        }
+    }
+    p{
+        font-size:30px;font-family:akrobat-regular;line-height:40px;
+        @media(max-width:767px){
+           font-size:20px;
+        }
+    }
+}
+
+.philosophy{
+    padding:56px 137px;background:$grey;
+    @media(max-width:767px){
+        padding:10% 5%;text-align:center;
+    }
+    h2{
+        font-size:48px;text-transform:uppercase;padding-bottom:64px;font-family:akrobat-bold;
+        @media(max-width:767px){
+            font-size:35px;padding-bottom:25px;
+        }
+    }
+    p{
+        font-size:30px;line-height:40px;font-family:akrobat-regular;
+        &:not(:last-child){
+            margin-bottom:48px;
+        }
+        @media(max-width:767px){
+            font-size:20px;
+         }
+    }
+}
+.about-values{
+    padding:56px 137px;
+    @media(max-width:767px){
+        padding:10% 5%;text-align:center;
+    }
+    h2{
+        font-size:48px;text-transform:uppercase;padding-bottom:64px;font-family:akrobat-bold;
+        @media(max-width:767px){
+            font-size:35px;padding-bottom:25px;
+        }
+    }
+    p{
+        font-size:30px;line-height:40px;font-family:akrobat-regular;
+        span{
+            font-family:akrobat-bold;
+        }
+        &:not(:last-child){
+            margin-bottom:30px;
+        }
+        @media(max-width:767px){
+            font-size:20px;
+         }
+    }
+}

@@ -1,0 +1,39 @@
+.values{
+    padding:5% 0;
+    @media(max-width:767px){
+       text-align:center;
+    }
+    h5{
+        font-size:22px;font-family:akrobat-extralight;
+        @media(max-width:1000px){
+            font-size:20px;
+        }
+    }
+    h2{
+        font-size:48px;font-family:akrobat-bold;text-transform: uppercase;position: relative;margin-top:46px;
+        @media(max-width:1000px){
+            font-size:40px;
+        }
+        @media(max-width:767px){
+            font-size:35px;
+        }
+        &:before{
+            content:""; position: absolute; background: $gold;height: 5px; width: 407px;left: -20%;top:-22px;z-index:3;
+            @media(max-width:767px){
+                width:200px;
+            }
+        }
+        &:after{
+            content:"";position: absolute;width:407px;height: 50px;background: $grey;left:-20%;top:-20px;z-index:-1;
+            @media(max-width:767px){
+                width:200px;
+            }
+        }
+    }
+    p{
+        font-size:22px;font-family:akrobat-extralight;line-height:30px;
+        @media(max-width:1000px){
+            font-size:20px;line-height:25px;
+        }
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masawara || Portfolio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--header-->
+    <header class="header port">
+        <a href="index.html"><img src="./images/Masawara logo.png" class="logo1" alt=""></a>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamMenu"><span></span></label>
+        <div class="menu">
+            
+            <ul>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="portfolio.html">Companies</a></li>
+                <li><a href="about.html">Contact</a></li>
+            </ul>
+            <ul>
+                <li><a href="about1.html">about</a></li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="csr.html">Csr</a></li>
+            </ul>
+            <div class="links">
+                <img src="./images/instagram.png" alt="">
+                <img src="./images/facebook.png" alt="">
+                <img src="./images/twitter.png" alt="">
+            </div>
+            
+        </div>
+    </header>
+
+    <!--TopDiv-->
+    <div class="topDivPortfolio">
+        <div class="container">
+            <h1>PORTFOLIO COMPANIES</h1>
+            <p>We prioritize our investments on industries and entrepreneurs that display a capacity for quick growth and sustainable disruption. </p>
+        </div>
+    </div>
+
+    <!--lastDiv-->
+    <div class="lastDivPortfolio">
+       
+        <div class="container">
+            <h2>Industry</h2>
+        <div class="row">
+                <div class="col-md-12">
+                    <h3>Financial Services</h3>
+    
+                    <div class="links">
+                        <ul>
+                            <li><a onclick="modalBlock()">ZimNat General Insurance</a></li>
+                            <li><a onclick="modalBlock()">ZimNat Life Assurance</a></li>
+                            <li><a  onclick="modalBlock()">ZimNat Asset Management</a></li>
+                        </ul>
+                        <ul>
+                            <li><a onclick="modalBlock()">ZimNat Micro Finance</a></li>
+                            <li><a onclick="modalBlock()">Minerva Risk Advisors</a></li>
+                            <li><a onclick="modalBlock()">GrandRe</a></li>
+                        </ul>
+                        <ul>
+                            <li><a onclick="modalBlock()">FSG Zimbabwe</a></li>
+                            <li><a onclick="modalBlock()">Botswana Insurance Company</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <h3>Hospitality</h3>
+                    <ul>
+                        <li><a onclick="modalBlock()">Cresta Zimbabwe</a></li>
+                        <li><a onclick="modalBlock()">Cresta Marakanelo Limited</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <h3>ICT</h3>
+                    <ul>
+                        <li><a onclick="modalBlock()">Dandemutande</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <h3>Real Estate</h3>
+                    <ul><li><a onclick="modalBlock()">Joina City</a></li></ul>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <h3>Health</h3>
+                    <ul>
+                        <li><a onclick="modalBlock()">Sovereign Health</a></li>
+                        <li><a onclick="modalBlock()">Minerva</a></li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="col-md-12">
+                    <h3>Energy</h3>
+                    <p>We are currently exploring wind, solar, natural gas and hydro-energy solutions in 
+                        order to reduce the demand supply deficit in Sub-Saharan Africa. We are currently 
+                        setting up a solar park and providing off grid energy solutions. Masawara has a diverse network of business
+                         interests that provide significant synergy opportunities with our energy projects.</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!--modal-->
+    <div id="popUp" class="modal">
+
+
+                    
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+              <label class="close"><span ></span></label>
+            
+          </div>
+          <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./images/zimnat (2).png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <h3>ZimNat General Insurance</h3>
+                        <p>The assurance business was formed in 1959. The business’s offering covers life
+                             assurance, retirement planning, funeral cover, cash
+                             back solutions, group mortgage and loan protection and employee benefits solutions.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <p>Sector: <br>
+                        Financial Services</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Size: <br>
+                        $13B</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>Country: <br>
+                        Zimbabwe</p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>CEO: <br>
+                        Jonh Smith</p>
+                    </div>
+                </div>
+            </div>
+              
+          </div>
+          <div class="modal-footer">
+            <button>
+                <a href="#">
+                <span>Visit Website</span>
+                <img src="./images/Line 7.png" alt="">    
+                </a>
+            </button>
+          </div>
+        </div>
+      
+      </div>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

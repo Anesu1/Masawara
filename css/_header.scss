@@ -1,0 +1,161 @@
+
+header{
+    position: absolute;width:100%;z-index: 99;direction:rtl; 
+    
+  
+    input{
+        display: none;
+    }
+    .logo1{
+        position: absolute;top:57px;left:67px;width:221px;z-index: 99;
+    }
+    
+    label{
+        position: absolute;right:67px;top:32px;z-index: 20;padding:20px 5px 20px 49px;
+        @media(max-width:767px){
+           top:20px;right:15px;
+        }
+        span{
+            width:44px;height:3px;position: absolute;background:rgb(0, 0, 0);transition:500ms;
+            @media(max-width:767px){
+                background:white;width:30px;
+            }
+            &:before{
+                height: 100%;width:100%;background:black;position: absolute;top:-12px;content:"";right:0;transition:500ms;
+                @media(max-width:767px){
+                    background:white;
+                }
+            }
+            &:after{
+                height: 100%;width:100%;background:black;position: absolute;top:12px;content:"";right:0;transition:500ms;
+                @media(max-width:767px){
+                    background:white;
+                }
+            }
+        }
+    }
+    .hamMenu{
+        top:58px;right:78px;
+    }
+    .menu{
+        direction:ltr; @include flex();background:$pink;color:black;height:100vh;width:0;overflow: hidden;transition:1s;transform-origin:right;position: absolute;
+        @media(max-width:767px){
+            flex-direction: column;
+        }
+        @media(min-width:767px) and (min-height:1000px){
+            height:60vh;
+        }
+        .logo{
+            width:221.46px;position: absolute;z-index: 20;top:59px;left:59px;transition:1s ease-out;transition-delay: 1s;
+            @media(max-width:767px){
+                width:100px;top:40px;left:20px;
+            }
+        }
+        ul{
+            @media(max-width:767px){
+                text-align:center;
+            }
+            li{
+                a{
+                   transition:500ms; display:block;padding:20px;font-size:60px;text-decoration:none;color:black;text-transform:uppercase;font-family:akrobat-bold;
+                   @media(max-width:1000px){
+                 font-size:30px;
+                }
+                @media(max-width:767px){
+                    font-size:25px;padding:10px 20px;
+                }
+                   &:hover{
+                   color:white;
+               }
+                }
+            }
+        }
+        .links{
+          transform: translate(0, 95px);transition:500ms;min-width:300px;
+          @media(max-width:1000px){
+              transform:translate(0, 60px);
+          }
+          @media(max-width:767px){
+              min-width:165px;
+          }
+            img{
+                height:50px;margin-right:32px;
+                @media(max-width:1000px){
+                    height:30px;
+                }
+                @media(max-width:767px){
+                    margin:0 10px;
+                }
+            }
+        }
+
+    }
+    input:checked ~ .menu{
+        width:100%; 
+        
+    }
+    input:checked ~ label{
+        span{
+            background:transparent;
+            &:before{
+                top:0;transform:rotate(45deg);
+                @media(max-width:767px){
+                    background:rgb(0, 0, 0);
+                }
+            }
+            &:after{
+                top:0;transform:rotate(-45deg);
+                @media(max-width:767px){
+                    background:rgb(0, 0, 0);
+                }
+            }
+        }
+
+    }
+  
+}
+
+.header{
+    border-bottom:10px solid $gold;height:135px;margin-bottom:30px;position:relative;
+    @media(max-width:1000px){
+        height:86px;
+    }
+    @media(max-width:767px){
+        height:100px;border-bottom:5px solid $gold;
+    }
+   .logo1{
+    @media(max-width:1000px){
+        top:40px;
+    }
+    @media(max-width:767px){
+        top:35px;width:180px;left:20px;
+    }
+   }
+    label{
+        @media(max-width:1000px){
+            top:35px;
+        }
+        @media(max-width:767px){
+            top:25px;right:20px;
+        }
+        span{
+            background:black;
+            &:before{
+                background:black;
+            }
+            &:after{
+                background:black;
+            }
+        }
+    }
+}
+.bgheader{
+    background:white;height:135px;position: relative;border-bottom:none;
+    @media(max-width:1000px){
+        height:86px;
+    }
+}
+
+.about1{
+    margin-bottom:0;
+}

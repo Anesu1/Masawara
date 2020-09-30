@@ -1,0 +1,83 @@
+.csrPage{
+   
+    @media(max-width:767px){
+        text-align:center;
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        position: absolute;
+        top: 100%;
+       
+    }
+    .owl-carousel{
+        position:relative;
+    }
+    .owl-dots{
+        position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    h2{
+        padding:84px 0 48px 55px;font-size:48px;font-family:akrobat-bold;
+        @media(max-width:767px){
+            padding:5%;
+        }
+    }
+    .container{
+        .container{
+            @media(max-width:767px){
+                padding:0;
+            }
+        }
+    }
+    .container{
+        .col-md-12{
+            .item{
+                .img{
+                    position: relative;left:50%;transform: translateX(-50%);max-width:860px;height:504px;background:url("../images/container.png");@include background();
+                    @media(max-width:767px){
+                        width:100%;height:200px;
+                    }
+                }
+
+            }
+            // .lSAction > .lSNext,
+            // .lSAction > .lSPrev{
+            //     font-size:75px;transform:translateY(-50%);
+            // }
+           
+        }
+     
+   
+        p{
+            padding-bottom:44px;font-size:30px;line-height:30px;font-family:akrobat-regular;
+            @media(max-width:767px){
+                padding-bottom:5%;font-size:18px;line-height:25px;
+            }
+        }
+    }
+   
+    .bottom-csr{
+        position: relative;
+        h2{
+            padding:0;margin:117px 0 74px 158px;font-family:akrobat-bold;
+          
+            @media(max-width:767px){
+                padding:5%;padding-top:39px;text-align:center;font-size:35px;transform:translateX(0px);margin:0;
+            }
+            &:before{
+                background:$gold;height:5px;content: "";position: absolute;left:0;top:0;width:476px;transform: translate(-158px,-25px);
+                @media(max-width:767px){
+                    transform:unset;width:50%;
+                }
+            }
+            &:after{
+                background:$grey;height:50px;content: "";position: absolute;left:0;top:5px;width:476px;z-index: -1;transform: translate(-158px,-25px);
+                @media(max-width:767px){
+                    transform:unset;width:50%;
+                }
+            }
+        }
+    }
+}

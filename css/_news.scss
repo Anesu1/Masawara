@@ -1,0 +1,73 @@
+.news{
+    position: relative;font-family:akrobat;padding-bottom:263px;
+    @media(max-width:1000px){
+        padding-bottom:50px;
+    }
+    @media(max-width:767px){
+        padding-bottom:39px;
+    }
+    .bg{
+        position: absolute;width: 100vw;left:0;top:0;border:2px solid $gold;height:310px;  
+    }
+    h2{
+        font-family:akrobat-bold;font-size:48px;text-transform: uppercase;padding:43px 0 33px 115px;
+        @media(max-width: 767px){
+            font-size:35px;
+        }
+    }
+    .row{
+        .col-md-4{
+            margin:0 auto;max-width:295px;height:352px;border:1px solid $gold;padding:0;background:white;
+            @media(max-width:1000px){
+                min-width:300px;
+            }
+            &:nth-child(2),&:first-child{
+                margin-bottom:30px;
+            }
+            p{
+                margin-bottom:0;font-size:18px;
+            }
+            .p1{
+                padding:18px 0 14px 9px;font-family:akrobat-extralight;
+            }
+            .p2{
+                padding:18px 0 18px 12px;text-transform:capitalize;font-family:akrobat-semibold;
+            }
+            .p3{
+                font-weight: normal;padding:0  23px;font-family:akrobat-regular;
+            }
+            button{
+                padding:10px 4px;background: white;font-size:16px;text-transform:uppercase;border:1px solid $gold;margin-left:23px;margin-top:14px;color:black;width:94px;font-family:akrobat-semibold;
+                @media(max-width:767px){
+                   font-size:13px;
+                }
+                a{
+                    text-decoration:none;color:black;
+                }
+            }
+            hr{
+                margin:0;height:1px ;width:42.5px;background:$gold;margin-left:22px;
+            }
+            .img{
+                height:118.16px;width:100%;
+            }
+            &:first-child{
+               .img{
+                background: url("../images/Masawara\ family.png");@include background();
+               }
+            }
+            &:nth-child(2){
+                .img{
+                 background: url("../images/news2.png");@include background();
+                }
+             }
+             &:last-child{
+                .img{
+                 background: url("../images/n\ ews3.png");@include background();
+                }
+             }
+        }
+    }
+}
+
+
